@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Drex";
-  color: rgb(0, 255, 0);
+  color: #40df20;
 }
 @font-face {
   font-family: "Drex";
@@ -23,7 +23,7 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #000801;
   overflow-x: hidden;
 } /* 
 
@@ -49,25 +49,30 @@ auxiliares
 header {
   width: 100%;
   height: 20%;
+  background-color: #000801;;
+  padding-bottom: 2%;
+  border-bottom:1px solid #40df20;
 }
 
 .menu-desktop {
   display: flex;
   justify-content: space-around;
-  padding-top: 8%;
+  padding-top: 5%;
   font-size: 20pt;
   font-weight: bold;
   list-style: none;
+  
 }
 
 .menu-desktop li a {
   text-decoration: none;
   transition: 0.4s;
+ 
 }
 
 .menu-desktop li a:hover {
   color: white;
-  text-shadow: 0px 0px 25px rgb(0, 255, 0);
+  text-shadow: 0px 0px 25px#40df20;
 }
 
 section div.center {
@@ -99,7 +104,7 @@ hr.linha2 {
 
 .matrix-bg {
   position: relative;
-  padding-top: 6px;
+
   margin-top: 4%;
 }
 
@@ -116,7 +121,7 @@ hr.linha2 {
   background-size: cover;
 
   background-color: rgba(255, 255, 255, 0.056);
-  opacity: 0.05;
+  opacity: 0.08;
   z-index: -1; /* Coloca a pseudo-classe atrás do conteúdo principal */
 }
 
@@ -124,6 +129,8 @@ hr.linha2 {
   border-bottom: 1px solid rgb(255, 255, 255);
   opacity: 1;
   margin-top: 7%;
+
+ 
 
   /* Outros estilos conforme necessário */
 }
@@ -135,7 +142,7 @@ hr.linha2 {
   padding-top: 7%;
   opacity: 1;
   padding-bottom: 5%;
-  text-shadow: 0px 0px 60px rgba(2, 255, 129, 0.578);
+  text-shadow: 0px 0px 60px #40df20;
   
   ;
 
@@ -164,7 +171,7 @@ hr.linha2 {
   height: 35px;
   border-radius: 5pt;
   background-color: transparent;
-  border: 1px solid green;
+  border: 1px solid #40df20;
   transition: 0.5s;
   margin-top: 5%;
 }
@@ -192,10 +199,17 @@ hr.linha2 {
   cursor: pointer;
 }
 
-main{
+main{ 
+
+
+  background-image: linear-gradient();
+
+  /* background-color:#000801; */
 
     padding-top: 5%;
     text-align: center;
+    padding-bottom: 5%;
+    
 }
 
 main h2{
@@ -206,7 +220,7 @@ main h2{
 main div{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     padding-top: 5%;
 
@@ -272,6 +286,20 @@ main div{
 
 }
 
+.cards{
+  background-color: #effce9;
+
+  width: 20rem;
+  height: 25rem;
+  border-radius: 25pt;
+  color: #000801;
+}
+
+.cards img{
+  width: 20%;
+  filter: grayscale(2);
+}
+
 
 
 @keyframes anima {
@@ -282,4 +310,35 @@ main div{
   100% {
     left: 125%;
   }
+}
+
+
+@media screen and (max-width:1200px) {
+
+  .center{
+    
+    flex-direction: column;
+    align-items: center;
+    font-size: 5%;
+  }
+
+  .menu-desktop{
+
+
+    font-size: 20px;
+    padding-top: 15%;
+    text-align: center;
+    padding-right: 15%;
+
+
+  }
+
+  .w50{
+    width: 100%;
+  }
+    
+  .matrix-bg::before{
+    opacity: 0.09;
+  }
+    
 }
