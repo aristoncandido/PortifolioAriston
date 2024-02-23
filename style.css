@@ -247,7 +247,11 @@ main div{
 .about {
     padding-top: 5%;
     background-position: center;
+    background-image: url(./imgs/);
     background-size: cover;
+    /* background-color: #020e04; */
+    border-top: 1PX SOLID transparent;
+   
     
 
 
@@ -277,7 +281,8 @@ main div{
 .about h2 {
   font-family: "Glitch";
   font-weight: 100;
-  color: #af20df;
+/*   color: #af20df; */
+  color:white;
   font-size: 25pt;
   
   padding-bottom: 2%;
@@ -294,13 +299,76 @@ main div{
   height: 25rem;
   border-radius: 25pt;
   color: #000801;
+  background-color: #110316;
+  padding: 0;
+
 }
 
-.cards img{
-  width: 20%;
-  height: 20%;
+
+.cards .service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+
+
+}
+.cards .service span{
+  width: 80%;
+  text-align: justify;
+  font-weight: 900;
+}
+
+
+.cards svg{
+  width: 30%;
+  filter: drop-shadow(0px 0px 15px  #bf21f3 );
+  height: 30%;
+  
   
 }
+
+
+.cards h3 {
+  font-family: "Glitch";
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #af20df; 
+   text-stroke-width:0.2%;
+  text-stroke-color: #af20df; 
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -313,6 +381,26 @@ main div{
     left: 125%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:1200px) {
@@ -353,3 +441,6 @@ main div{
   }
     
 }
+
+
+
