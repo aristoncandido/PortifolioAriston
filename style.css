@@ -57,7 +57,7 @@ header {
 .menu-desktop {
   display: flex;
   justify-content: space-around;
-  padding-top: 5%;
+  padding-top: 6%;
   font-size: 20pt;
   font-weight: bold;
   list-style: none;
@@ -105,7 +105,8 @@ hr.linha2 {
 .matrix-bg {
   position: relative;
 
-  margin-top: 4%;
+
+
 }
 
 .matrix-bg::before {
@@ -128,7 +129,8 @@ hr.linha2 {
 .initial {
   border-bottom: 1px solid #af20df;
   opacity: 1;
-  margin-top: 7%;
+ 
+ 
 
  
 
@@ -201,13 +203,19 @@ hr.linha2 {
 
 main{ 
 
-/*   background-image: linear-gradient(to bottom, rgb(0, 0, 0) , #289b02);
- */
-  /* background-color:#000801; */
+/*  background-image: linear-gradient(to bottom, rgb(0, 0, 0) 10%, #24022f); */
+ 
+/*   background-color:#000000;  */
 
     padding-top: 5%;
     text-align: center;
     padding-bottom: 5%;
+
+    background-image: url(./imgs/a94aee835e16cff4f14c83dac8ffbe10.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
 
 }
 
